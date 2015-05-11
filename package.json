@@ -1,0 +1,26 @@
+{
+  "name": "nik-check-server",
+  "version": "1.0.0",
+  "description": "Indonesia NIK checker",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [
+    "nik",
+    "checker",
+    "indonesia",
+    "indonesian",
+    "kpu"
+  ],
+  "author": "Dhi Aurrahman <diorahman@rockybars.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "express": "^4.12.3",
+    "nik-check": "^1.0.1"
+  },
+  "devDependencies": {
+    "supertest": "^0.15.0"
+  }
+}
