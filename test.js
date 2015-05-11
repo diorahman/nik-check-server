@@ -15,7 +15,7 @@ request(server)
 request(server)
   .post('/verify')
   .set('Content-type', 'application/json')
-  .send({ nik : config.test.truthy.nik })
+  .send({ nik : config.test.truthy.nik || process.env.NIK })
   .expect(200)
   .expect('Content-Type', /json/)
   .end(function(err, res){
