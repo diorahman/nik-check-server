@@ -22,3 +22,13 @@ request(server)
     if (err) throw err;
   });
 
+request(server)
+  .post('/verify')
+  .set('Content-type', 'application/json')
+  .send({ nik : config.test.truthy.nik || process.env.NIK, name : config.test.truthy.name || process.env.NAME })
+  .expect(200)
+  .expect('Content-Type', /json/)
+  .end(function(err, res){
+    if (err) throw err;
+  });
+
